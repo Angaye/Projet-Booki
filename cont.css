@@ -1,0 +1,183 @@
+#conteneur
+{
+	display: flex;
+	border: 1px solid black;
+	width: 300px;
+	height: 40px;
+	text-align: center;
+	border-radius: 20px;
+}
+.element:nth-child(1)
+{
+background-color: blue;
+border: 1px solid black;
+width: 50px;
+padding: 8px;
+border-bottom-left-radius:20px ;
+border-top-left-radius: 20px;
+}
+.element:nth-child(2)
+{
+background-color: white;
+border: 1px solid black;
+padding-top: 10px;
+width: 400px;
+}
+.element:nth-child(3)
+{
+	background-color:black ;
+	color: white;
+	border: 1px solid black;
+	padding: 10px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius:20px ;
+}
+
+.entMars
+{
+	display: flex;
+}
+.entMars img
+{
+	border-radius: 30px;
+}
+.colon1
+{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+.colon2
+{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+
+}
+#hebergement
+{
+	border: 1px solid black;
+	width: 610px;
+	height: 550px;
+	background-color: grey;
+	border-radius: 20px;
+}
+#Marseille
+{
+	display: flex;
+	margin: 10px;
+	padding: 20px;
+
+}
+
+
+.affiche
+{
+	margin: 20px;
+}
+.can, .port, .mouette, .mer, .panier, .amina
+{
+	border: 6px solid white;
+	border-radius: 20px;
+	height: 170px;
+	background-color: white;
+}
+#hebergement img
+{
+	border-top-right-radius: 20px;
+	border-top-left-radius:20px ;
+}
+.à
+{
+	padding: 10px;
+}
+p
+{
+	margin: 40px;
+}
+.colon3
+{
+	border: 1px solid black;
+	width: 300px;
+	height: 550px;
+	border-radius:20px;
+	background-color: grey;
+}
+
+.populaire
+{
+display: flex;
+padding: 15px;
+justify-content: space-between;
+}
+
+
+.fac1, .fac2, .fac3
+{
+	flex-direction: column;
+}
+.fac11, .fac12, .fac13
+{
+	display: flex;
+	border: 10px solid white;
+	width: 250px;
+	border-radius:20px ;
+	justify-content: space-between;
+	background-color: white;
+}
+.fac11, .fac12, .fac13
+{
+	margin: 20px;
+}
+.fac11 img, .fac12 img, .fac13 img
+{
+	border-top-left-radius: 20px;
+	border-bottom-left-radius:20px ;
+}
+.colonvieux, .notre
+{
+	flex-direction: column;
+}
+.activité-marseille
+{
+	display: flex;
+	border: 1px solid black;
+	justify-content: space-around;
+	padding: 20px;
+	background-color: grey;
+	border-radius: 20px;
+
+}
+.activité-marseille img
+{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.activité-marseille .vieul
+{
+	border: 8px solid white;
+	border-radius: 20px;
+	height: 375px;
+	background-color: white;
+}
+.iles, .national, .dame, .longchamp, .forte
+{
+	border: 1px solid white;
+	border-radius: 20px;
+	background-color: white;
+}
+.forte, .iles, .dame,.longchamp
+{
+	padding: 10px;
+}
+.bas
+{
+    display: flex;
+
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 20px;
+    background-color:grey;
+    margin-top: 10px;
+    height: 150px;
+ }
