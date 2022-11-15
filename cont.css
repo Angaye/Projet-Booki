@@ -181,3 +181,47 @@ justify-content: space-between;
     margin-top: 10px;
     height: 150px;
  }
+ header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+header ul li
+{
+    margin-right: 40px;
+}
+header .entete
+{
+    padding: 37px;
+}
+header nav
+{
+    margin-top: 15px;
+}
+header ul
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+header .entete:hover
+{
+    border-top: solid 3px blue;
+    padding: 36px;
+}
+.filtre
+{
+	display: flex;
+	justify-content: space-between;
+}
+.eco, .fam,.rom,.ani
+{
+	border: 1px solid black;
+	display: flex;
+	border-radius:20px ;
+}
+ .filtre img
+ {
+ 	border: 1px solid black;
+ 	border-radius: 20px;
+ }
