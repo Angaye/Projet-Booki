@@ -190,6 +190,7 @@ justify-content: space-between;
 header ul li
 {
     margin-right: 40px;
+	display: inline;
 }
 header .entete
 {
@@ -209,6 +210,7 @@ header .entete:hover
     border-top: solid 3px blue;
     padding: 36px;
 }
+
 .filtre
 {
 	display: flex;
