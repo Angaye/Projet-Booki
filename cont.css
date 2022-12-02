@@ -1,229 +1,306 @@
-#conteneur
+/*--header--*/
+a
 {
+	text-decoration: none;
+	color: black;
+}
+nav
+{
+	
 	display: flex;
-	border: 1px solid black;
-	width: 300px;
-	height: 40px;
-	text-align: center;
-	border-radius: 20px;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
 }
-.element:nth-child(1)
+#logo
 {
-background-color: blue;
-border: 1px solid black;
-width: 50px;
-padding: 8px;
-border-bottom-left-radius:20px ;
-border-top-left-radius: 20px;
+	margin-right: auto;
+	padding: 0 40px;
 }
-.element:nth-child(2)
+nav a
 {
-background-color: white;
-border: 1px solid black;
-padding-top: 10px;
-width: 400px;
+	padding: 40px;
+	
 }
-.element:nth-child(3)
+nav a:hover
 {
-	background-color:black ;
-	color: white;
-	border: 1px solid black;
-	padding: 10px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius:20px ;
+	border-top: 3px solid blue;
 }
 
-.entMars
+/*--body--*/
+/*--main--*/
+.header-sous
 {
-	display: flex;
+	padding: 0 40px;
 }
-.entMars img
-{
-	border-radius: 30px;
-}
-.colon1
-{
-	display: flex;
-	justify-content: space-between;
-	margin: 20px;
-}
-.colon2
-{
-	display: flex;
-	justify-content: space-between;
-	padding: 10px;
-
-}
-#hebergement
-{
-	border: 1px solid black;
-	width: 610px;
-	height: 550px;
-	background-color: grey;
-	border-radius: 20px;
-}
-#Marseille
-{
-	display: flex;
-	margin: 10px;
-	padding: 20px;
-
-}
-
-
-.affiche
-{
-	margin: 20px;
-}
-.can, .port, .mouette, .mer, .panier, .amina
-{
-	border: 6px solid white;
-	border-radius: 20px;
-	height: 170px;
-	background-color: white;
-}
-#hebergement img
-{
-	border-top-right-radius: 20px;
-	border-top-left-radius:20px ;
-}
-.à
-{
-	padding: 10px;
-}
-p
-{
-	margin: 40px;
-}
-.colon3
-{
-	border: 1px solid black;
-	width: 300px;
-	height: 550px;
-	border-radius:20px;
-	background-color: grey;
-}
-
-.populaire
-{
-display: flex;
-padding: 15px;
-justify-content: space-between;
-}
-
-
-.fac1, .fac2, .fac3
-{
-	flex-direction: column;
-}
-.fac11, .fac12, .fac13
-{
-	display: flex;
-	border: 10px solid white;
-	width: 250px;
-	border-radius:20px ;
-	justify-content: space-between;
-	background-color: white;
-}
-.fac11, .fac12, .fac13
-{
-	margin: 20px;
-}
-.fac11 img, .fac12 img, .fac13 img
-{
-	border-top-left-radius: 20px;
-	border-bottom-left-radius:20px ;
-}
-.colonvieux, .notre
-{
-	flex-direction: column;
-}
-.activité-marseille
-{
-	display: flex;
-	border: 1px solid black;
-	justify-content: space-around;
-	padding: 20px;
-	background-color: grey;
-	border-radius: 20px;
-
-}
-.activité-marseille img
-{
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
-}
-.activité-marseille .vieul
-{
-	border: 8px solid white;
-	border-radius: 20px;
-	height: 375px;
-	background-color: white;
-}
-.iles, .national, .dame, .longchamp, .forte
-{
-	border: 1px solid white;
-	border-radius: 20px;
-	background-color: white;
-}
-.forte, .iles, .dame,.longchamp
-{
-	padding: 10px;
-}
-.bas
+/*--recherche--*/
+.recher-form
 {
     display: flex;
+    margin-bottom: 1em;
+}
+.recher-form i
+{
+    padding: 1rem 1.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem 0 0 1rem;
 
-    justify-content: space-around;
-    border-radius: 20px;
-    padding: 20px;
-    background-color:grey;
-    margin-top: 10px;
-    height: 150px;
- }
- header
+}
+.recher-form input
+{
+    flex-basis: 6rem;
+    border: 1px solid lightgrey;
+    padding: 1rem 1.5rem;
+}
+.recher-form input::placeholder
+{
+    font-size: 1.2rem;
+}
+.recher-form button
+{
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0 1.2rem 1.2rem 0;
+    padding: 0 1.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    opacity: 0.7;
+    transition: transform 200ms;
+}
+.recher-form button:hover
+{
+    opacity: 1;
+    transform: scale(1.03);
+}
+/*--filtre-liste--*/
+
+.filtre-liste
 {
     display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-}
-header ul li
-{
-    margin-right: 40px;
-	display: inline;
-}
-header .entete
-{
-    padding: 37px;
-}
-header nav
-{
-    margin-top: 15px;
-}
-header ul
-{
-    display: flex;
+    align-items: center;
+    gap: 1rem 2rem;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
-header .entete:hover
+.filtre .fa-solid
 {
-    border-top: solid 3px blue;
-    padding: 36px;
+    color: blue;
+    background-color: lightblue;
+   /*-- padding: 1rem--*/
+    border-radius: 50%;
+    margin: -2px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filtre span
+{
+    font-weight: bold;
+    padding: 0 1rem;
+}
+.filtre:hover
+{
+background-color: #f3f8ff;
+transform: scale(1.02);
 }
 
 .filtre
 {
-	display: flex;
-	justify-content: space-between;
+border: 2px solid lightgrey;
+border-radius: 2rem;
+display: flex;
+align-items: center;
+transition: all 100ms;
 }
-.eco, .fam,.rom,.ani
+/*--Plus infos--*/
+.plus-info
 {
-	border: 1px solid black;
-	display: flex;
-	border-radius:20px ;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2em;
 }
- .filtre img
- {
- 	border: 1px solid black;
- 	border-radius: 20px;
- }
+.plus-info .fa-solid
+{
+    color: blue;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid darkgrey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*--appartement--*/
+.appartement
+{
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    padding-bottom: 2em;
+    
+}
+.logement:hover
+{
+    transform: scale(1.02);
+}
+
+.appartement h3{
+margin-top: 0.5em;
+}
+@media (max-width:800px) {
+    .appartement{
+        flex-direction: column;
+    }
+    .populaire
+    {
+        order: -1;
+    }
+    
+}
+.marseille
+{
+    border: none;
+    padding: 1em;
+    background-color: lightgrey;
+    border-radius: 1em;
+    
+
+}
+.chambre1, .chambre2
+{
+    display: flex;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+.logement
+{
+    border: 5px solid white;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 0 0 16px #0000002e;
+    transition: all 0.2s;
+}
+.logement img
+{
+    border-radius: 1em 1em 0 0;
+}
+.info .blue
+{
+    color: blue;
+}
+.info .grey
+{
+    color: lightslategrey;
+}
+.logement .info
+{ 
+    margin: 0;
+}
+.marseille a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    
+}
+/*--populaire--*/
+.populaire
+{
+    border: none;
+    background-color: lightgrey;
+    padding: 1em;
+    border-radius: 1em;
+}
+.populaire .blue
+{
+    color: blue;
+}
+.info
+{
+    padding: 1em;
+}
+.logement2, .logement1, .logement3
+{
+    display: flex;
+    border: 1px solid white;
+    padding: 1em;
+    background-color: white;
+    border-radius: 1em;
+    align-items: center;
+    margin-bottom: 2em;
+    transition: all 0.2s;
+}
+.logement2:hover, .logement1:hover, .logement3:hover
+{
+    transform: scale(1.02);
+}
+.logement2 img, .logement1 img, .logement3 img
+{
+    border-radius: 1em 0 0 1em;
+}
+.populaire h3
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*--activités--*/
+.activité
+{
+    border: none;
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+    padding-bottom: 4em;
+}
+.act p,.act2 p,.act4 p
+{
+ padding: 1em;
+}
+.act,.act2 div,.act4 div
+{
+    border: none;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 0.4em 0.4em 0.4em black;
+    transition: all 0.2s;
+}
+.act:hover,.act2 div:hover,.act4 div:hover
+{
+    transform: scale(1.02);
+}
+.act2,.act4
+{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+.act img,.act2 img,.act4 img
+{
+    border-radius: 1em 1em 0 0;
+}
+/*--footer--*/
+.pied-page
+{
+    display: flex;
+    border: none;
+    gap: 9em;
+    padding: 4em;
+    border-radius: 1em;
+    background-color: lightgrey;
+    padding-bottom: 4em;
+    box-shadow: 0.4em 0.4em 0.4em black;
+    font-size: large;
+}
+.pied-page a
+{
+    text-decoration: none;
+    color: black;
+}
