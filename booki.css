@@ -166,7 +166,7 @@ transition: all 100ms;
 .appartement h3{
 margin-top: 0.5em;
 }
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
     .appartement,.activité,.marseille{
         flex-direction: column;
     }
@@ -187,14 +187,28 @@ margin-top: 0.5em;
     {
         border-radius: 1em 0 0 1em;
     }
-    .logement1
+    .logement1 img,.logement2 img
      {
         position: relative;
+        right: 58px;
+       
+     }
+     .logement3 img
+     {
+        position: relative;
+        right: 15px;
+       
      }
     .activité
     {
       justify-content: center;
-      align-items: center;  
+      align-items: center;
+      width: 100%;  
+    }
+    .activité .act2 img,.act img
+    {
+        width:100% ;
+        align-items: center;
     }
     .act img
     {
@@ -315,11 +329,11 @@ margin-top: 0.5em;
     gap: 2em;
     padding-bottom: 4em;
 }
-.act p,.act2 p,.act4 p
+.act p,.act2 p
 {
  padding: 1em;
 }
-.act,.act2 div,.act4 div
+.act,.act2 div
 {
     border: none;
     border-radius: 1em;
@@ -327,17 +341,17 @@ margin-top: 0.5em;
     box-shadow: 0.4em 0.4em 0.4em black;
     transition: all 0.2s;
 }
-.act:hover,.act2 div:hover,.act4 div:hover
+.act:hover,.act2 div:hover
 {
     transform: scale(1.02);
 }
-.act2,.act4
+.act2
 {
     display: flex;
     gap: 1em;
     flex-direction: column;
 }
-.act img,.act2 img,.act4 img
+.act img,.act2 img
 {
     border-radius: 1em 1em 0 0;
 }
@@ -346,7 +360,7 @@ margin-top: 0.5em;
 {
     display: flex;
     border: none;
-    padding: 4em;
+    padding: 2em;
     border-radius: 1em;
     background-color: lightgrey;
     padding-bottom: 4em;
