@@ -42,6 +42,20 @@ nav a:hover
 {
 	border-top: 3px solid blue;
 }
+@media screen and (max-width:800px){
+    .nav-link
+    {
+        display: flex;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+    nav a:hover
+    {
+        border-top:none ;
+        border-bottom: 2px solid blue;
+    }
+    
+}
 
 /*--body--*/
 /*--main--*/
@@ -51,12 +65,20 @@ nav a:hover
     display: flex;
     margin-bottom: 1em;
 }
+.recher-form >*
+{
+    padding:1rem 1.2rem ;
+}
 .recher-form i
 {
     padding: 1rem 1.2rem;
     background-color: lightgrey;
     border-radius: 1rem 0 0 1rem;
 
+}
+.recher-form button i
+{
+    display: none;
 }
 .recher-form input
 {
@@ -78,7 +100,7 @@ nav a:hover
     padding: 0 1.5rem;
     border: none;
     cursor: pointer;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.2rem;
     opacity: 0.7;
     transition: transform 200ms;
 }
@@ -86,6 +108,23 @@ nav a:hover
 {
     opacity: 1;
     transform: scale(1.03);
+}
+@media screen and (max-width:800px){
+    .recher-form .recher-form-text
+    {
+
+        display: none;
+    }
+    .recher-form button i
+    {
+        background-color: inherit;
+        display: inline;
+    }
+    .recher-form input
+    {
+        overflow: hidden;
+    }
+    
 }
 /*--filtre-liste--*/
 
@@ -179,6 +218,7 @@ margin-top: 0.5em;
         flex-wrap: wrap;
         flex-direction: column;
     }
+    
     .chambre1 .logement,.chambre2 .logement
     {
         display: flex;
