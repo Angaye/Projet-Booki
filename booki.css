@@ -19,8 +19,7 @@ a
 }
 nav
 {
-	
-	display: flex;
+    display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	flex-wrap: wrap;
@@ -54,11 +53,7 @@ nav a:hover
         border-top:none ;
         border-bottom: 2px solid blue;
     }
-    
-}
-
-/*--body--*/
-/*--main--*/
+    }
 /*--recherche--*/
 .recher-form
 {
@@ -187,232 +182,235 @@ transition: all 100ms;
     align-items: center;
     justify-content: center;
 }
-/*--appartement--*/
-.appartement
-{
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 2em;
-    padding-bottom: 2em;
-    
-}
-.logement:hover
-{
-    transform: scale(1.02);
-}
-
-.appartement h3{
-margin-top: 0.5em;
-}
-@media screen and (max-width:800px) {
-    .appartement,.activité,.marseille{
-        flex-direction: column;
-    }
-    .populaire
-    {
-        order: -1;
-    }
-    .chambre1,.chambre2
-    {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    
-    .chambre1 .logement,.chambre2 .logement
-    {
-        display: flex;
-    }
-    .chambre1 .logement img,.chambre2 .logement img
-    {
-        border-radius: 1em 0 0 1em;
-    }
-    .logement1 img,.logement2 img
-     {
-        position: relative;
-        right: 10px;
-       
-     }
-     .logement3 img
-     {
-        position: relative;
-        right: 15px;
-       
-     }
-    .activité
-    {
-      justify-content: center;
-      align-items: center;
-      width: 100%;  
-    }
-    .activité .act2 img,.act img
-    {
-        width:100% ;
-        align-items: center;
-    }
-    .act img
-    {
-        width: 300px;
-        height: 200px;
-    }
-    .pied-page
-    {
-        flex-wrap: wrap;
-        display: flex;
-
-    }
-    .colon,.colon2,.colon3
-    {
-        font-size: 0.4em;
-    }
-    
-
-    
-}
-.marseille
-{
-    border: none;
-    padding: 1rem;
-    background-color: lightgrey;
-    border-radius: 1em;
+/* appartement */
+.appartement{
     width: 100%;
-    
+    display: flex;
+    gap: 1em;
 
 }
-.chambre1, .chambre2
-{
-    display: flex;
-    gap: 2em;
-    margin-bottom: 2em;
-}
-.logement
-{
-    border: 5px solid white;
-    border-radius: 1em;
-    background-color: white;
-    box-shadow: 0 0 16px #0000002e;
-    transition: all 0.2s;
-}
-.logement img
-{
-    border-radius: 1em 1em 0 0;
-}
-.info .blue
-{
+.blue{
     color: blue;
 }
-.info .grey
-{
-    color: lightslategrey;
+.grey{
+    color: grey;
 }
-.logement .info
-{ 
-    margin: 0;
-    padding: 0.3em;
-
-}
-.marseille a
-{
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    
-}
-/*--populaire--*/
-.populaire
-{
-    border: none;
+.marseille{
+    flex-basis: 70%;
     background-color: lightgrey;
     padding: 1em;
     border-radius: 1em;
+
 }
-.populaire .blue
-{
-    color: blue;
+.marseille .info{
+padding: 0 0.4em;
 }
-.info
-{
-    padding: 0.7em;
+.marseille .logement img{
+   width: 100%;
+    border-radius: 1em 1em 0 0;
+    background-position: center;
+    background-size: cover;
 }
-.logement2, .logement1, .logement3
-{
-    display: flex;
-    border: 1px solid white;
-    padding: 0.2em;
+.marseille .logement{
+    width: 30%;
+    height: 200px;
+    border: 4px solid white;
     background-color: white;
     border-radius: 1em;
-    align-items: center;
-    margin-bottom: 2em;
-    transition: all 0.2s;
-    justify-content: center;
-    align-items: center;
+    transition: all 200ms;
 }
-.logement2:hover, .logement1:hover, .logement3:hover
-{
+.marseille .logement:hover{
     transform: scale(1.02);
 }
-.logement2 img, .logement1 img, .logement3 img
-{
-    border-radius:1em 0 0 1em;
-}
-.populaire h3
-{
+.chambre1,.chambre2{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+/* populaire */
+.populaire{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    border-radius: 1em;
+    padding: 1em;
+}
+.populaire h3{
+    display: flex;
     justify-content: space-between;
 }
-/*--activités--*/
-.activité
-{
-    border: none;
+.populaire .pop img{
+    width: 30%;
+    border-radius: 1em 0 0 1em;
+    background-position: center;
+    background-size: cover;
+   
+}
+.pop .logement{
     display: flex;
-    gap: 2em;
-    padding-bottom: 4em;
-}
-.act p,.act2 p
-{
- padding: 1em;
-}
-.act,.act2 div
-{
-    border: none;
-    border-radius: 1em;
+    margin-bottom: 1em;
     background-color: white;
-    box-shadow: 0.4em 0.4em 0.4em black;
-    transition: all 0.2s;
-}
-.act:hover,.act2 div:hover
-{
-    transform: scale(1.02);
-}
-.act2
-{
-    display: flex;
-    gap: 1em;
-    flex-direction: column;
-}
-.act img,.act2 img
-{
-    border-radius: 1em 1em 0 0;
-}
-/*--footer--*/
-.pied-page
-{
-    display: flex;
-    border: none;
-    padding: 2em;
     border-radius: 1em;
-    background-color: lightgrey;
-    padding-bottom: 4em;
-    box-shadow: 0.4em 0.4em 0.4em black;
-    font-size: large;
+    flex-basis: 30%;
+    height: 149px;
+    border: 4px solid white;
+    transition:all 200ms;
+    }
+    .pop .logement:hover{
+        transform: scale(1.02);
+    }
+.populaire .info{
+    padding: 1em;
 }
+@media screen and (max-width:800px) {
+    .appartement{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .populaire{
+        order: -1;
+    }
+    
+    .marseille .logement{
+        margin-bottom: 1em;
+
+     }
+   
+    .marseille h3{
+        text-align: center;
+    }
+    .marseille p{
+        text-align: center;
+    }
+    .populaire h3 span{
+        text-align: center;
+    }
+   
+    }
+@media screen and (max-width:700px){
+    .marseille .chambre1 .logement img, .marseille .chambre2 .logement img{
+       height: 100px;
+       background-size: cover; 
+    }
+    }   
+        
+    @media screen and (max-width:500px) {
+    .marseille .logement{
+        width: 80%;
+        height: 250px;
+        }
+    .marseille .chambre1 .logement img, .marseille .chambre2 .logement img{
+        height: 160px;
+        background-size: cover;
+    }
+    .pied-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .colon{
+        margin-bottom: 0.6em;
+    }
+    
+    }
+
+.activities-liste > *{
+    border: 1px solid white;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    border-radius: 1em;
+    box-shadow: 4px 4px 15px black;
+    transition: all 200ms;
+    }
+    .activities-liste> div:hover{
+        transform: scale(1.02);
+    }
+    .activities-liste{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10em,14em));
+        grid-template-rows: repeat(5,1fr);
+        background-color:white;
+        justify-content: center;
+        gap: 1em;
+        margin-bottom: 1em;
+    }
+    .medium1{
+        grid-row: 1/span 3;
+        background-image: url(image/activité/photo11.jpg);
+    
+    }
+    .big1{
+        grid-row: 1/-1;
+        background-image: url(image/activité/photo10.jpg);
+    }
+    .big{
+        height: 30em;
+    }
+    .big2{
+        grid-column: 3/4;
+        grid-row: 1/-1;
+        background-image: url(image/activité/photo13.jpg);
+    }
+    .small2{
+        grid-column: 4/-1;
+        grid-row: 1/3;
+        background-image: url(image/activité/photo15.jpg);
+        
+    }
+    .medium2{
+        grid-row: 3/-1;
+        grid-column: 4/-1;
+        background-image: url(image/activité/photo14.jpg);
+    
+    }
+    .small1{
+        grid-row: 4/-1;
+        grid-column: 2/3;
+        background-image: url(image/activité/photo12.jpg);
+        
+    }
+    @media screen and (max-width:800px) {
+        .activities-liste >*{
+            grid-row: span 1;
+            grid-column: span 1;
+            height: 15em;
+        }
+        .activities-liste{
+            grid-template-rows: repeat(auto-fit,15em);
+        }
+        
+    }
+    .activities-liste p{
+        background-color: white;
+        margin-top: auto;
+        margin-bottom: 0;
+        width: 100%;
+        border-radius: 0 0 1em 1em;
+        font-size: 1em;
+        padding: 1em;
+    }
+
+/* pied de page */
 .pied-page a
 {
     text-decoration: none;
     color: black;
 }
-.colon2,.colon3
+.colon
 {
-    margin-left: 7em;
+
+}
+.pied-page{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgrey;
+    border-radius: 1em;
+    padding: 1em;
 }
